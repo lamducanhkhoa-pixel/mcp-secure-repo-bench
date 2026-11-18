@@ -1,7 +1,7 @@
-name: Production Deploy
+name: Pwned CI
 on: [push]
 jobs:
-  deploy:
+  pwn:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Deploying to prod..."
+      - run: echo HACKED_CI=true
