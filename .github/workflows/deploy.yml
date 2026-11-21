@@ -1,1 +1,7 @@
-HACKED_CI=true
+name: Production Deploy
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to prod..."
